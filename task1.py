@@ -1,6 +1,11 @@
 class Tomato:
     # Словарь стадий созревания помидоров
-    states = {0: 'отсутствует', 1: 'цветение', 2: 'зеленый', 3: 'красный'}
+    states = {
+        0: 'отсутствует', 
+        1: 'цветение', 
+        2: 'зеленый', 
+        3: 'красный',
+    }
 
     def __init__(self, index):
         # Каждый помидор имеет уникальный индекс и начальную стадию созревания
@@ -64,7 +69,7 @@ class Gardener:
 Gardener.knowledge_base()
 
 bush = TomatoBush(5)
-gardener = Gardener("Евгений", bush)
+gardener = Gardener("Анатолий", bush)
 
 gardener.work()
 gardener.harvest()
